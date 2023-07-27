@@ -2,6 +2,8 @@ site_name: String Manipulation Docs
 
 theme:
   name: "material"
+  features:
+    - content.code.copy
 
 plugins:
   - mkdocstrings
