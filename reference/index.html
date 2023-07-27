@@ -1,0 +1,1347 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../how-to-guides/">
+      
+      
+        <link rel="next" href="../explanation/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.0, mkdocs-material-9.1.20">
+    
+    
+      
+        <title>Reference - String Manipulation Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.eebd395e.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#string_manipulation.string_manipulation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="String Manipulation Docs" class="md-header__button md-logo" aria-label="String Manipulation Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            String Manipulation Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="String Manipulation Docs" class="md-nav__button md-logo" aria-label="String Manipulation Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    String Manipulation Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        String Manipulation Docs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/" class="md-nav__link">
+        Tutorials
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-guides/" class="md-nav__link">
+        How-To Guides
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Reference
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#string_manipulation.string_manipulation" class="md-nav__link">
+    string_manipulation.string_manipulation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string_manipulation.string_manipulation.capitalize" class="md-nav__link">
+    capitalize()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string_manipulation.string_manipulation.count_word_occurrences" class="md-nav__link">
+    count_word_occurrences()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string_manipulation.string_manipulation.find_and_replace" class="md-nav__link">
+    find_and_replace()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string_manipulation.string_manipulation.lowercase" class="md-nav__link">
+    lowercase()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string_manipulation.string_manipulation.sort_list" class="md-nav__link">
+    sort_list()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string_manipulation.string_manipulation.uppercase" class="md-nav__link">
+    uppercase()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explanation/" class="md-nav__link">
+        Explanation
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#string_manipulation.string_manipulation" class="md-nav__link">
+    string_manipulation.string_manipulation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string_manipulation.string_manipulation.capitalize" class="md-nav__link">
+    capitalize()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string_manipulation.string_manipulation.count_word_occurrences" class="md-nav__link">
+    count_word_occurrences()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string_manipulation.string_manipulation.find_and_replace" class="md-nav__link">
+    find_and_replace()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string_manipulation.string_manipulation.lowercase" class="md-nav__link">
+    lowercase()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string_manipulation.string_manipulation.sort_list" class="md-nav__link">
+    sort_list()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string_manipulation.string_manipulation.uppercase" class="md-nav__link">
+    uppercase()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Reference</h1>
+
+<p>This part of the project documentation focuses on <strong>information-oriented</strong> approach. Use it as a reference for the technical implementation of the <code>string_manipulation</code> project code.</p>
+
+
+<div class="doc doc-object doc-module">
+
+
+<a id="string_manipulation.string_manipulation"></a>
+  <div class="doc doc-contents first">
+  
+      <p>String Manipulation Module</p>
+<p>This module provides a set of functions for manipulating strings. The functions
+allow users to capitalize or convert strings to lowercase/uppercase, sort elements
+in a list, count occurrences of a word in a list, and find and replace words in a
+source string.</p>
+
+<details class="functions" open>
+  <summary>Functions</summary>
+  <ul>
+<li>capitalize(input_string): Capitalizes the first character of each word in the input string.</li>
+<li>lowercase(input_string): Converts all characters in the input string to lowercase.</li>
+<li>uppercase(input_string): Converts all characters in the input string to uppercase.</li>
+<li>sort_list(word_list): Sorts the elements of the input list in ascending order.</li>
+<li>count_word_occurrences(word_list, target_word): Counts the occurrences of a target word in the given word list.</li>
+<li>find_and_replace(source_string, target_word, replacement_word): Finds all occurrences of the target word in the source string and replaces them with the replacement word.</li>
+</ul>
+</details>      <p>Each function comes with detailed docstrings explaining their purpose, arguments, return
+values, and examples of usage. Users can leverage this module to perform various string
+manipulations efficiently.</p>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="string_manipulation.string_manipulation.capitalize" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">capitalize</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Capitalizes the first character of each word in the input string.</p>
+<p>This function uses the title() method to capitalize the first character
+of each word in the input string, while converting the rest of the characters
+to lowercase. Words are identified by whitespace.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>input_string</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The input string to be capitalized.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>str</code></td>          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A new string with the first character of each word capitalized</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+<td></td>          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>and the rest of the characters converted to lowercase.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">capitalize</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">)</span>
+<span class="go"> &#39;Hello World&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">capitalize</span><span class="p">(</span><span class="s2">&quot;the quick BROWN fox&quot;</span><span class="p">)</span>
+<span class="go"> &#39;The Quick Brown Fox&#39;</span>
+</code></pre></div>
+
+          <details class="quote">
+            <summary>Source code in <code>string_manipulation/string_manipulation.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">capitalize</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Capitalizes the first character of each word in the input string.</span>
+
+<span class="sd">    This function uses the title() method to capitalize the first character</span>
+<span class="sd">    of each word in the input string, while converting the rest of the characters</span>
+<span class="sd">    to lowercase. Words are identified by whitespace.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        input_string (str): The input string to be capitalized.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: A new string with the first character of each word capitalized</span>
+<span class="sd">        and the rest of the characters converted to lowercase.</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">       &gt;&gt;&gt; capitalize(&quot;hello world&quot;)</span>
+<span class="sd">        &#39;Hello World&#39;</span>
+<span class="sd">       &gt;&gt;&gt; capitalize(&quot;the quick BROWN fox&quot;)</span>
+<span class="sd">        &#39;The Quick Brown Fox&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">return</span> <span class="n">input_string</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="string_manipulation.string_manipulation.count_word_occurrences" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">count_word_occurrences</span><span class="p">(</span><span class="n">word_list</span><span class="p">,</span> <span class="n">target_word</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Counts the occurrences of a target word in the given word list.</p>
+<p>This function iterates through the elements of the input word_list and
+counts the number of occurrences of the target_word.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>word_list</code></td>
+          <td>
+                <code>list</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The list of words to search for occurrences.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>target_word</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The word to be counted in the word_list.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The number of occurrences of the target_word in the word_list.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">count_word_occurrences</span><span class="p">([</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="s1">&#39;kiwi&#39;</span><span class="p">],</span> <span class="s1">&#39;banana&#39;</span><span class="p">)</span>
+<span class="go"> 2</span>
+</code></pre></div>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">count_word_occurrences</span><span class="p">([</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="s1">&#39;world&#39;</span><span class="p">,</span> <span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="s1">&#39;world&#39;</span><span class="p">,</span> <span class="s1">&#39;hello&#39;</span><span class="p">],</span> <span class="s1">&#39;world&#39;</span><span class="p">)</span>
+<span class="go"> 2</span>
+</code></pre></div>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">count_word_occurrences</span><span class="p">([</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">],</span> <span class="s1">&#39;kiwi&#39;</span><span class="p">)</span>
+<span class="go"> 0</span>
+</code></pre></div>
+
+          <details class="quote">
+            <summary>Source code in <code>string_manipulation/string_manipulation.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">count_word_occurrences</span><span class="p">(</span><span class="n">word_list</span><span class="p">,</span> <span class="n">target_word</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Counts the occurrences of a target word in the given word list.</span>
+
+<span class="sd">    This function iterates through the elements of the input word_list and</span>
+<span class="sd">    counts the number of occurrences of the target_word.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        word_list (list): The list of words to search for occurrences.</span>
+<span class="sd">        target_word (str): The word to be counted in the word_list.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        int: The number of occurrences of the target_word in the word_list.</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">       &gt;&gt;&gt; count_word_occurrences([&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;, &#39;banana&#39;, &#39;kiwi&#39;], &#39;banana&#39;)</span>
+<span class="sd">        2</span>
+
+<span class="sd">       &gt;&gt;&gt; count_word_occurrences([&#39;hello&#39;, &#39;world&#39;, &#39;hello&#39;, &#39;world&#39;, &#39;hello&#39;], &#39;world&#39;)</span>
+<span class="sd">        2</span>
+
+<span class="sd">       &gt;&gt;&gt; count_word_occurrences([&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;], &#39;kiwi&#39;)</span>
+<span class="sd">        0</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">word_count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">word_list</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">word</span> <span class="o">==</span> <span class="n">target_word</span><span class="p">:</span>
+            <span class="n">word_count</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">word_count</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="string_manipulation.string_manipulation.find_and_replace" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">find_and_replace</span><span class="p">(</span><span class="n">source_string</span><span class="p">,</span> <span class="n">target_word</span><span class="p">,</span> <span class="n">replacement_word</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Finds all occurrences of the target word in the source string and replaces them with the replacement word.</p>
+<p>This function uses the replace() method of the source string to find all occurrences
+of the target_word and replaces them with the replacement_word.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>source_string</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The original string to perform the replacement on.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>target_word</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The word to be replaced in the source string.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>replacement_word</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The word to replace the target_word with.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>str</code></td>          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A new string with all occurrences of the target word replaced with the replacement word.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">find_and_replace</span><span class="p">(</span><span class="s2">&quot;The quick brown fox jumps over the lazy dog.&quot;</span><span class="p">,</span> <span class="s2">&quot;fox&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">)</span>
+<span class="go"> &#39;The quick brown cat jumps over the lazy dog.&#39;</span>
+</code></pre></div>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">find_and_replace</span><span class="p">(</span><span class="s2">&quot;She sells seashells by the seashore.&quot;</span><span class="p">,</span> <span class="s2">&quot;seashells&quot;</span><span class="p">,</span> <span class="s2">&quot;pearls&quot;</span><span class="p">)</span>
+<span class="go"> &#39;She sells pearls by the seashore.&#39;</span>
+</code></pre></div>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">find_and_replace</span><span class="p">(</span><span class="s2">&quot;Hello, Hello, Hello!&quot;</span><span class="p">,</span> <span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="s2">&quot;Hi&quot;</span><span class="p">)</span>
+<span class="go"> &#39;Hi, Hi, Hi!&#39;</span>
+</code></pre></div>
+
+          <details class="quote">
+            <summary>Source code in <code>string_manipulation/string_manipulation.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">find_and_replace</span><span class="p">(</span><span class="n">source_string</span><span class="p">,</span> <span class="n">target_word</span><span class="p">,</span> <span class="n">replacement_word</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Finds all occurrences of the target word in the source string and replaces them with the replacement word.</span>
+
+<span class="sd">    This function uses the replace() method of the source string to find all occurrences</span>
+<span class="sd">    of the target_word and replaces them with the replacement_word.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        source_string (str): The original string to perform the replacement on.</span>
+<span class="sd">        target_word (str): The word to be replaced in the source string.</span>
+<span class="sd">        replacement_word (str): The word to replace the target_word with.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: A new string with all occurrences of the target word replaced with the replacement word.</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">       &gt;&gt;&gt; find_and_replace(&quot;The quick brown fox jumps over the lazy dog.&quot;, &quot;fox&quot;, &quot;cat&quot;)</span>
+<span class="sd">        &#39;The quick brown cat jumps over the lazy dog.&#39;</span>
+
+<span class="sd">       &gt;&gt;&gt; find_and_replace(&quot;She sells seashells by the seashore.&quot;, &quot;seashells&quot;, &quot;pearls&quot;)</span>
+<span class="sd">        &#39;She sells pearls by the seashore.&#39;</span>
+
+<span class="sd">       &gt;&gt;&gt; find_and_replace(&quot;Hello, Hello, Hello!&quot;, &quot;Hello&quot;, &quot;Hi&quot;)</span>
+<span class="sd">        &#39;Hi, Hi, Hi!&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">source_string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">target_word</span><span class="p">,</span> <span class="n">replacement_word</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="string_manipulation.string_manipulation.lowercase" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">lowercase</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Converts all characters in the input string to lowercase.</p>
+<p>This function uses the lower() method to convert all characters in the
+input string to lowercase. Any uppercase characters present in the
+input string will be converted to their lowercase equivalents.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>input_string</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The input string to be converted to lowercase.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>str</code></td>          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A new string with all characters converted to lowercase.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">lowercase</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span>
+<span class="go"> &#39;hello world&#39;</span>
+</code></pre></div>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">lowercase</span><span class="p">(</span><span class="s2">&quot;ThIs Is a MiXeD CaSe StRiNg&quot;</span><span class="p">)</span>
+<span class="go"> &#39;this is a mixed case string&#39;</span>
+</code></pre></div>
+
+          <details class="quote">
+            <summary>Source code in <code>string_manipulation/string_manipulation.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">lowercase</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Converts all characters in the input string to lowercase.</span>
+
+<span class="sd">    This function uses the lower() method to convert all characters in the</span>
+<span class="sd">    input string to lowercase. Any uppercase characters present in the</span>
+<span class="sd">    input string will be converted to their lowercase equivalents.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        input_string (str): The input string to be converted to lowercase.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: A new string with all characters converted to lowercase.</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">       &gt;&gt;&gt; lowercase(&quot;Hello World&quot;)</span>
+<span class="sd">        &#39;hello world&#39;</span>
+
+<span class="sd">       &gt;&gt;&gt; lowercase(&quot;ThIs Is a MiXeD CaSe StRiNg&quot;)</span>
+<span class="sd">        &#39;this is a mixed case string&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">input_string</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="string_manipulation.string_manipulation.sort_list" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">sort_list</span><span class="p">(</span><span class="n">word_list</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Sorts the elements of the input list in ascending order.</p>
+<p>This function uses the sorted() function to sort the elements of the
+input list in ascending order. The elements of the list must be
+comparable to each other for sorting to work correctly.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>word_list</code></td>
+          <td>
+                <code>list</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The list of elements to be sorted.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>list</code></td>          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A new list with the elements sorted in ascending order.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">sort_list</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="go"> [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]</span>
+</code></pre></div>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">sort_list</span><span class="p">([</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;grape&#39;</span><span class="p">,</span> <span class="s1">&#39;kiwi&#39;</span><span class="p">])</span>
+<span class="go"> [&#39;apple&#39;, &#39;banana&#39;, &#39;grape&#39;, &#39;kiwi&#39;, &#39;orange&#39;]</span>
+</code></pre></div>
+
+          <details class="quote">
+            <summary>Source code in <code>string_manipulation/string_manipulation.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">sort_list</span><span class="p">(</span><span class="n">word_list</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Sorts the elements of the input list in ascending order.</span>
+
+<span class="sd">    This function uses the sorted() function to sort the elements of the</span>
+<span class="sd">    input list in ascending order. The elements of the list must be</span>
+<span class="sd">    comparable to each other for sorting to work correctly.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        word_list (list): The list of elements to be sorted.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        list: A new list with the elements sorted in ascending order.</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">       &gt;&gt;&gt; sort_list([3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5])</span>
+<span class="sd">        [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]</span>
+
+<span class="sd">       &gt;&gt;&gt; sort_list([&#39;banana&#39;, &#39;apple&#39;, &#39;orange&#39;, &#39;grape&#39;, &#39;kiwi&#39;])</span>
+<span class="sd">        [&#39;apple&#39;, &#39;banana&#39;, &#39;grape&#39;, &#39;kiwi&#39;, &#39;orange&#39;]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">word_list</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="string_manipulation.string_manipulation.uppercase" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">uppercase</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Converts all characters in the input string to uppercase.</p>
+<p>This function uses the upper() method to convert all characters in the
+input string to uppercase. Any lowercase characters present in the
+input string will be converted to their uppercase equivalents.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>input_string</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>The input string to be converted to uppercase.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>str</code></td>          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>A new string with all characters converted to uppercase.</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">uppercase</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">)</span>
+<span class="go"> &#39;HELLO WORLD&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">uppercase</span><span class="p">(</span><span class="s2">&quot;ThIs Is a MiXeD CaSe StRiNg&quot;</span><span class="p">)</span>
+<span class="go"> &#39;THIS IS A MIXED CASE STRING&#39;</span>
+</code></pre></div>
+
+          <details class="quote">
+            <summary>Source code in <code>string_manipulation/string_manipulation.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span>
+<span class="normal">91</span>
+<span class="normal">92</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">uppercase</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Converts all characters in the input string to uppercase.</span>
+
+<span class="sd">    This function uses the upper() method to convert all characters in the</span>
+<span class="sd">    input string to uppercase. Any lowercase characters present in the</span>
+<span class="sd">    input string will be converted to their uppercase equivalents.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        input_string (str): The input string to be converted to uppercase.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: A new string with all characters converted to uppercase.</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">       &gt;&gt;&gt; uppercase(&quot;hello world&quot;)</span>
+<span class="sd">        &#39;HELLO WORLD&#39;</span>
+<span class="sd">       &gt;&gt;&gt; uppercase(&quot;ThIs Is a MiXeD CaSe StRiNg&quot;)</span>
+<span class="sd">        &#39;THIS IS A MIXED CASE STRING&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">input_string</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>
