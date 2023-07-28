@@ -167,7 +167,7 @@
   
     <li class="md-nav__item">
       <a href="../tutorials/" class="md-nav__link">
-        Tutorials
+        Python String Manipulation Functions Tutorial
       </a>
     </li>
   
@@ -219,32 +219,40 @@
     1. capitalize(input_string)
   </a>
   
-    <nav class="md-nav" aria-label="1. capitalize(input_string)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-import-the-function-from-the-module" class="md-nav__link">
-    Step 1: Import the function from the module
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-lowercaseinput_string" class="md-nav__link">
+    2. lowercase(input_string)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-call-the-function-with-your-input-string" class="md-nav__link">
-    Step 2: Call the function with your input string
+      
+        <li class="md-nav__item">
+  <a href="#3-uppercaseinput_string" class="md-nav__link">
+    3. uppercase(input_string)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-print-the-result" class="md-nav__link">
-    Step 3: Print the result
+      
+        <li class="md-nav__item">
+  <a href="#4-sort_listword_list" class="md-nav__link">
+    4. sort_list(word_list)
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#5-count_word_occurrencesword_list-target_word" class="md-nav__link">
+    5. count_word_occurrences(word_list, target_word)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-find_and_replacesource_string-target_word-replacement_word" class="md-nav__link">
+    6. find_and_replace(source_string, target_word, replacement_word)
+  </a>
   
 </li>
       
@@ -317,32 +325,40 @@
     1. capitalize(input_string)
   </a>
   
-    <nav class="md-nav" aria-label="1. capitalize(input_string)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-import-the-function-from-the-module" class="md-nav__link">
-    Step 1: Import the function from the module
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-lowercaseinput_string" class="md-nav__link">
+    2. lowercase(input_string)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-call-the-function-with-your-input-string" class="md-nav__link">
-    Step 2: Call the function with your input string
+      
+        <li class="md-nav__item">
+  <a href="#3-uppercaseinput_string" class="md-nav__link">
+    3. uppercase(input_string)
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-print-the-result" class="md-nav__link">
-    Step 3: Print the result
+      
+        <li class="md-nav__item">
+  <a href="#4-sort_listword_list" class="md-nav__link">
+    4. sort_list(word_list)
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#5-count_word_occurrencesword_list-target_word" class="md-nav__link">
+    5. count_word_occurrences(word_list, target_word)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-find_and_replacesource_string-target_word-replacement_word" class="md-nav__link">
+    6. find_and_replace(source_string, target_word, replacement_word)
+  </a>
   
 </li>
       
@@ -368,16 +384,103 @@
 <li><strong>Purpose:</strong> Capitalizes the first character of each word in the input string.</li>
 </ul>
 <p><strong>Example:</strong></p>
-<h3 id="step-1-import-the-function-from-the-module">Step 1: Import the function from the module</h3>
-<pre><code>   from string_manipulation import capitalize
-</code></pre>
-<h3 id="step-2-call-the-function-with-your-input-string">Step 2: Call the function with your input string</h3>
-<pre><code>   input_string = &quot;hello world&quot;
+<pre><code># Step 1: Import the function from the module
+
+   from string_manipulation import capitalize
+
+# Step 2: Call the function with your input string
+
+   input_string = &quot;hello world&quot;
    result = capitalize(input_string)
+
+# Step 3: Print the result 
+
+print(result)  # Output: 'Hello World'
 </code></pre>
-<h3 id="step-3-print-the-result">Step 3: Print the result</h3>
-<pre><code>   print(result)  # Output: 'Hello World'
+<h2 id="2-lowercaseinput_string">2. <code>lowercase(input_string)</code></h2>
+<ul>
+<li><strong>Purpose:</strong> Converts all characters in the input string to lowercase.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code># Step 1: Import the function from the module
+from string_manipulation import lowercase
+
+# Step 2: Call the function with your input string
+input_string = &quot;ThIs Is a MiXeD CaSe StRiNg&quot;
+result = lowercase(input_string)
+
+# Step 3: Print the result
+print(result)  # Output: 'this is a mixed case string'
+
 </code></pre>
+<h2 id="3-uppercaseinput_string">3. <code>uppercase(input_string)</code></h2>
+<ul>
+<li><strong>Purpose:</strong> Converts all characters in the input string to uppercase.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code># Step 1: Import the function from the module
+from string_manipulation import uppercase
+
+# Step 2: Call the function with your input string
+input_string = &quot;hello world&quot;
+result = uppercase(input_string)
+
+# Step 3: Print the result
+print(result)  # Output: 'HELLO WORLD'
+
+</code></pre>
+<h2 id="4-sort_listword_list">4. <code>sort_list(word_list)</code></h2>
+<ul>
+<li><strong>Purpose:</strong> Sorts the elements of the input list in ascending order.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code># Step 1: Import the function from the module
+from string_manipulation import sort_list
+
+# Step 2: Call the function with your input list
+word_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+result = sort_list(word_list)
+
+# Step 3: Print the result
+print(result)  # Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
+
+</code></pre>
+<h2 id="5-count_word_occurrencesword_list-target_word">5. <code>count_word_occurrences(word_list, target_word)</code></h2>
+<ul>
+<li><strong>Purpose:</strong> Counts the occurrences of a target word in the given word list.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code># Step 1: Import the function from the module
+from string_manipulation import count_word_occurrences
+
+# Step 2: Call the function with your input word list and target word
+word_list = ['apple', 'banana', 'orange', 'banana', 'kiwi']
+target_word = 'banana'
+result = count_word_occurrences(word_list, target_word)
+
+# Step 3: Print the result
+print(result)  # Output: 2
+
+</code></pre>
+<h2 id="6-find_and_replacesource_string-target_word-replacement_word">6. <code>find_and_replace(source_string, target_word, replacement_word)</code></h2>
+<ul>
+<li><strong>Purpose:</strong> Finds all occurrences of the target word in the source string and replaces them with the replacement word.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code># Step 1: Import the function from the module
+from string_manipulation import find_and_replace
+
+# Step 2: Call the function with your input source string, target word, and replacement word
+source_string = &quot;The quick brown fox jumps over the lazy dog.&quot;
+target_word = &quot;fox&quot;
+replacement_word = &quot;cat&quot;
+result = find_and_replace(source_string, target_word, replacement_word)
+
+# Step 3: Print the result
+print(result)  # Output: 'The quick brown cat jumps over the lazy dog.'
+
+</code></pre>
+<p>Congratulations! You've learned how to use the Python String Manipulation Functions to perform various string manipulations. By incorporating these functions into your work, you can efficiently handle daunting text-related tasks. Happy writing!</p>
 
 
 
