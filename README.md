@@ -2,6 +2,8 @@
 
 Welcome to my portfolio project! This repository showcases the **string_manipulation** Python package, which consists of six simple but powerful functions designed to aid technical writers in cumbersome text editing tasks. Additionally, the project includes comprehensive docstrings, enabling the automatic compilation of the Reference chapter in the documentation. The documentation is created using Mkdocs and is written in Markdown, following the principles of Diátaxis to ensure clarity and coherence.
 
+The documentation project is hosted online at https://anna-niezychowska.github.io/SampleDocumentation/
+
 ## Table of Contents
 
 1. [Introduction](#introduction)
