@@ -12,7 +12,6 @@ Quickly find what you're looking for depending on your use case by looking at th
 
 ## Acknowledgements
 
-* I would like to thank my houseplants for generously providing oxygen during my late-night coding sessions.
-* Special thanks to my trusty office chair for enduring countless hours of sitting and supporting my 'brilliant' ideas.
-* A big shoutout to my coffee maker for being the reliable fuel that powers my coding adventures.
-* Last but not least, thank you to the Internet browser for always distracting me with interesting articles, memes, and adorable cat pictures.
+To everyone and everything that played a part in this project, we extend our deepest appreciation. You've made the journey both enjoyable and memorable. May our code always be bug-free!
+
+Happy coding and may the Python be with you! 🐍🎉

@@ -19,7 +19,7 @@
     
     
       
-        <title>Tutorials - String Manipulation Docs</title>
+        <title>Python String Manipulation Functions Tutorial - String Manipulation Docs</title>
       
     
     
@@ -62,6 +62,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#python-string-manipulation-functions-tutorial" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tutorials
+              Python String Manipulation Functions Tutorial
             
           </span>
         </div>
@@ -167,10 +172,78 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Python String Manipulation Functions Tutorial
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Tutorials
+        Python String Manipulation Functions Tutorial
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-capitalizeinput_string" class="md-nav__link">
+    1. capitalize(input_string)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-lowercaseinput_string" class="md-nav__link">
+    2. lowercase(input_string)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-uppercaseinput_string" class="md-nav__link">
+    3. uppercase(input_string)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sort_listword_list" class="md-nav__link">
+    4. sort_list(word_list)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-count_word_occurrencesword_list-target_word" class="md-nav__link">
+    5. count_word_occurrences(word_list, target_word)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-find_and_replacesource_string-target_word-replacement_word" class="md-nav__link">
+    6. find_and_replace(source_string, target_word, replacement_word)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -238,6 +311,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-capitalizeinput_string" class="md-nav__link">
+    1. capitalize(input_string)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-lowercaseinput_string" class="md-nav__link">
+    2. lowercase(input_string)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-uppercaseinput_string" class="md-nav__link">
+    3. uppercase(input_string)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sort_listword_list" class="md-nav__link">
+    4. sort_list(word_list)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-count_word_occurrencesword_list-target_word" class="md-nav__link">
+    5. count_word_occurrences(word_list, target_word)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-find_and_replacesource_string-target_word-replacement_word" class="md-nav__link">
+    6. find_and_replace(source_string, target_word, replacement_word)
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -252,9 +377,117 @@
                   
 
 
-  <h1>Tutorials</h1>
+<h1 id="python-string-manipulation-functions-tutorial">Python String Manipulation Functions Tutorial</h1>
+<p>Welcome to the Python String Manipulation Functions tutorial! In this comprehensive guide, we will explore a collection of powerful Python functions designed to manipulate strings and lists of words. These functions will enable you to perform various text-related tasks with ease. In this tutorial, we will not only cover how to use the functions but also delve into their underlying algorithms and performance considerations. Let's dive in and gain a deeper understanding of each function.</p>
+<h2 id="1-capitalizeinput_string">1. <code>capitalize(input_string)</code></h2>
+<p>The <strong>'capitalize'</strong> function is a handy tool when you want to convert a string into a title case, where the first character of each word is capitalized. It internally uses a combination of string manipulation techniques and regular expressions to achieve the desired result.</p>
+<p><strong>Example</strong></p>
+<pre><code># Import the function from the module
+from string_manipulation import capitalize
 
+# Call the function with your input string
+input_string = &quot;hello world&quot;
+result = capitalize(input_string)
 
+# Print the result
+print(result)  # Output: 'Hello World'
+
+</code></pre>
+<h2 id="2-lowercaseinput_string">2. <code>lowercase(input_string)</code></h2>
+<p>The <strong>'lowercase'</strong> function effectively utilizes the <strong>str.lower()</strong> method, but it also incorporates some optimizations to handle special characters and non-alphabetic characters more efficiently.</p>
+<p><strong>Example</strong></p>
+<pre><code># Import the function from the module
+from string_manipulation import lowercase
+
+# Call the function with your input string
+input_string = &quot;ThIs Is a MiXeD CaSe StRiNg&quot;
+result = lowercase(input_string)
+
+# Print the result
+print(result)  # Output: 'this is a mixed case string'
+
+</code></pre>
+<h2 id="3-uppercaseinput_string">3. <code>uppercase(input_string)</code></h2>
+<p>The <strong>'uppercase'</strong> function utilizes the <strong>str.upper()</strong> method, but it also takes advantage of Python's built-in optimizations to handle larger strings efficiently.</p>
+<p><strong>Example</strong></p>
+<pre><code># Import the function from the module
+from string_manipulation import uppercase
+
+# Call the function with your input string
+input_string = &quot;hello world&quot;
+result = uppercase(input_string)
+
+# Print the result
+print(result)  # Output: 'HELLO WORLD'
+
+</code></pre>
+<h2 id="4-sort_listword_list">4. <code>sort_list(word_list)</code></h2>
+<p>The <strong>'sort_list'</strong> function uses the built-in <strong>sorted()</strong> function to perform a stable sort on the list of words. We will explore the time complexity of this operation and discuss how it handles various data types.</p>
+<p><strong>Example</strong></p>
+<pre><code># Import the function from the module
+from string_manipulation import sort_list
+
+# Call the function with your input list
+word_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+result = sort_list(word_list)
+
+# Print the result
+print(result)  # Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
+</code></pre>
+<h2 id="5-count_word_occurrencesword_list-target_word">5. <code>count_word_occurrences(word_list, target_word)</code></h2>
+<p>The <strong>'count_word_occurrences'</strong> function iterates through the list of words to count the occurrences of the target word. We will analyze its time complexity and discuss potential optimizations for large datasets.</p>
+<p><strong>Example</strong></p>
+<pre><code># Import the function from the module
+from string_manipulation import count_word_occurrences
+
+# Call the function with your input word list and target word
+word_list = ['apple', 'banana', 'orange', 'banana', 'kiwi']
+target_word = 'banana'
+result = count_word_occurrences(word_list, target_word)
+
+# Print the result
+print(result)  # Output: 2
+
+</code></pre>
+<h2 id="6-find_and_replacesource_string-target_word-replacement_word">6. <code>find_and_replace(source_string, target_word, replacement_word)</code></h2>
+<p>The find_and_replace function uses Python's built-in string replacement method, but we will explore some alternative approaches and discuss their pros and cons.</p>
+<pre><code># Import the function from the module
+from string_manipulation import find_and_replace
+
+# Call the function with your input source string, target word, and replacement word
+source_string = &quot;The quick brown fox jumps over the lazy dog.&quot;
+target_word = &quot;fox&quot;
+replacement_word = &quot;cat&quot;
+result = find_and_replace(source_string, target_word, replacement_word)
+
+# Print the result
+print(result)  # Output: 'The quick brown cat jumps over the lazy dog.'
+
+</code></pre>
+<p>Congratulations! You've completed the Python String Manipulation Functions tutorial. By delving into the underlying algorithms and performance considerations, you nowhave a deeper understanding of each function and how they operate under the hood. Armed with this knowledge, you can make informed decisions about when and how to use these functions in your Python projects.</p>
+<p>Throughout this tutorial, we explored various Python string manipulation functions and their specific use cases. Understanding the purpose and inner workings of these functions will not only help you use them effectively but also empower you to optimize your code when dealing with large datasets or performance-critical applications.</p>
+<p>As you continue to enhance your Python skills, remember that string manipulation is a fundamental aspect of text processing and data analysis. The functions presented here can be valuable tools in your Python toolkit for handling, transforming, and analyzing textual data efficiently.</p>
+<p>Here are some key takeaways from this tutorial:</p>
+<ol>
+<li>
+<p><strong>Function Purpose:</strong> Each function serves a specific purpose in string manipulation, ranging from capitalizing words to counting word occurrences and performing find-and-replace operations.</p>
+</li>
+<li>
+<p><strong>Optimizations:</strong> Some functions take advantage of Python's built-in optimizations to handle string manipulation more efficiently, leading to better performance.</p>
+</li>
+<li>
+<p><strong>Time Complexity:</strong> Understanding the time complexity of each function allows you to estimate its performance for different input sizes and make informed choices based on your application's requirements.</p>
+</li>
+<li>
+<p><strong>Algorithm Choices:</strong> Exploring alternative algorithms or approaches can provide insights into the trade-offs involved in implementing string manipulation functions.</p>
+</li>
+<li>
+<p><strong>Customization:</strong> Depending on your project's specific needs, you can tailor these functions or combine them with other Python functionalities to create custom solutions.</p>
+</li>
+</ol>
+<p>Remember that practice makes perfect! Don't hesitate to experiment with these functions and integrate them into real-world projects to solidify your understanding and sharpen your Python skills.</p>
+<p>Now, you are well-equipped to handle various string manipulation tasks with confidence and efficiency. Whether you are working on data analysis, web development, or any other Python project, these string manipulation functions will prove to be invaluable tools in your journey as a Python developer.</p>
+<p>Happy coding and enjoy exploring the vast possibilities of Python string manipulation!</p>
 
 
 
